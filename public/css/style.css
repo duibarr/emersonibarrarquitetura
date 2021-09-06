@@ -1,0 +1,183 @@
+p, small, adress {
+	color: #212121;
+}
+
+*::-moz-selection {
+	color: white;
+	background-color: rgba(204, 0, 0, 0.7);
+	text-shadow: 1px 1px #000000;
+}
+
+*::selection {
+	color: white;
+	background-color: rgba(204, 0, 0, 0.7);
+	text-shadow: 1px 1px #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #212121;
+}
+
+i {
+	color: #cc0000;
+	padding: 0px 10px 0px 10px;
+}
+
+.bg-red {
+	background-color: #990000;
+}
+
+.destaque {
+	font-size: x-large;
+}
+
+.red {
+	color: #CC0000;
+}
+
+.margem {
+	margin-top: 40px;
+}
+
+.zoom {
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	-o-transition: transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
+}
+
+.zoom:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+.zoom2 {
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	-o-transition: transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
+}
+
+.zoom2:hover {
+	-webkit-transform: scale(1.02);
+	    -ms-transform: scale(1.02);
+	        transform: scale(1.02);
+}
+
+.navbar {
+	background-color: #990000;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+	        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+}
+
+.sublinhado {
+	position: relative;
+	color: rgb(255, 255, 255);
+	text-decoration: none;  
+  }
+
+.sublinhado:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 6px;
+	left: 0;
+	background-color: rgb(255, 255, 255);
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	    transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.sublinhado:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	    transform: scaleX(1);
+}
+
+.foot {
+    position: absolute;
+    bottom: 0;
+}
+
+.div-1 {
+	height: 10vh;
+}
+
+.card {
+	cursor: pointer;
+}
+
+.sombra {
+	-webkit-box-shadow: 0px 2px 14px 1px rgba(83, 83, 83, 0.99);
+	        box-shadow: 0px 2px 14px 1px rgba(83, 83, 83, 0.99);
+}
+
+.display-5 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.btn-danger:hover {
+	background-color: #cc0000;
+	color: white;
+	border: 1px solid #cc0000;
+}
+
+.btn-danger {
+	background-color: transparent;
+	color: #cc0000;
+}
+
+.sub-contr:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: -5px;
+	left: 0;
+	background-color: #cc0000;
+	-webkit-transform: scaleX(1);
+	    -ms-transform: scaleX(1);
+	        transform: scaleX(1);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.sub-contr, .sub-fixo {
+	position: relative;
+}
+
+.sub-contr:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(0);
+	    -ms-transform: scaleX(0);
+	        transform: scaleX(0);
+}
+
+
+.sub-fixo::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #cc0000;
+	left: 0;
+	bottom: -5px;
+}
