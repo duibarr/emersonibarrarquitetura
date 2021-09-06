@@ -1,1 +1,1 @@
-Projeto feito com HTML e CSS (Bootstrap).
+Portfólio de arquitetura feito com HTML e CSS (Bootstrap).
