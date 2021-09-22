@@ -5,13 +5,11 @@ p, small, adress {
 *::-moz-selection {
 	color: white;
 	background-color: rgba(204, 0, 0, 0.7);
-	text-shadow: 1px 1px #000000;
 }
 
 *::selection {
 	color: white;
 	background-color: rgba(204, 0, 0, 0.7);
-	text-shadow: 1px 1px #000000;
 }
 
 a {
