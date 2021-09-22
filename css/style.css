@@ -181,3 +181,8 @@ i {
 	left: 0;
 	bottom: -5px;
 }
+
+.mail {
+	font-weight: bold;
+	color: #212121;
+}
