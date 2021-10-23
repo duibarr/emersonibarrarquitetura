@@ -187,8 +187,8 @@ html {
 	height: 100%;
 	line-height:40px;  
 	position:absolute;
-	top: -10vh;
-	left: 48.99vw;
+	top: -15vh;
+	left: 5vh;
 	opacity: 0.4;
 	color:#FFF;
 }
@@ -243,3 +243,50 @@ html {
 	-webkit-text-decoration: underline #212121;
 	        text-decoration: underline #212121;
 }
+
+
+
+
+
+.fab{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+  }
+  
+  .fab button{
+	cursor: pointer;
+	width: 48px;
+	height: 48px;
+	border-radius: 30px;
+	background-color: #990000;
+	border: none;
+	box-shadow: 0 1px 5px rgba(0,0,0,.4);
+	font-size: 24px;
+	color: white;
+  }
+
+  
+  .fab button.main{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #990000;
+  }
+  
+  .fab button.main:before{
+	content: '↓';
+  }
+  
+  .fab button.main:active,
+  .fab button.main:focus{
+	outline: none;
+	background-color: #990000;
+	box-shadow: 0 3px 8px rgba(0,0,0,.5);
+   }
+  
+  .fab button.main:active,
+  .fab button.main:focus {
+	bottom: 70px;
+  }
+  
