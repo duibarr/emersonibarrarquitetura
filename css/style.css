@@ -179,15 +179,16 @@ html {
 
 .btn-parallax {
 	position: relative;
-	left: 49.5%;   
 }
 
 .btn-parallax::before {   
 	content:"\25bc";
 	width: 100%;
+	height: 100%;
 	line-height:40px;  
 	position:absolute;
-	top: -7em;
+	top: -10vh;
+	left: 49vw;
 	opacity: 0.4;
 	color:#FFF;
 }
