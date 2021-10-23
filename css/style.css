@@ -58,6 +58,14 @@ body {
 	}
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+:target {
+	scroll-margin-top: 5em;
+}
+
 .destaque {
 	font-size: x-large;
 }
@@ -167,6 +175,27 @@ body {
 .btn-danger {
 	background-color: transparent;
 	color: #cc0000;
+}
+
+.btn-parallax {
+	position: relative;
+	left: 50%;   
+
+}
+
+.btn-parallax::before {   
+	content:"\25bc";
+	width: 100%;
+	line-height:40px;  
+	height:40px;
+	position:absolute;
+	top:-60px;
+	color:#FFF;
+}
+
+.fa-chevron-down {
+	background-color: #212121;
+	color: white;
 }
 
 .sub-contr:before {
