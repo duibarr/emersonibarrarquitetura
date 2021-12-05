@@ -1,15 +1,30 @@
+:root {
+	--main-red: #990000;
+	--light-red: #cc0000;
+	--white: #ffffff;
+	--light-black: #212121;
+}
+
 *::-moz-selection {
-	color: white;
-	background-color: rgba(204, 0, 0, 0.7);
+	color: var(--white);
+	background-color: var(--main-red) ;
 }
 
 *::selection {
-	color: white;
-	background-color: rgba(204, 0, 0, 0.7);
+	color: var(--white);
+	background-color: var(--main-red);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
 }
 
 p, small, adress {
-	color: #212121;
+	color: var(--light-black);
 }
 
 a {
@@ -18,32 +33,12 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #212121;
+	color: var(--light-black);
 }
 
 i {
-	color: #cc0000;
+	color: var(--light-red);
 	padding: 0px 10px 0px 10px;
-}
-
-body {
-	height: 100vh;
-}
-
-.bg-red {
-	background-color: #990000;
-}
-
-.parallax {
-	background-image: url("/img/img-vazia.svg");
-	background-color: #990000;
-		
-	min-height: 100vh;
-		
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto;
 }
 
 @media (max-width: 540px) {
@@ -58,20 +53,28 @@ body {
 	}
 }
 
-html {
-	scroll-behavior: smooth;
+.bg-red {
+	background-color: var(--main-red);
+}
+
+.parallax {
+	background-image: url("/img/img-vazia.svg");
+	background-color: var(--main-red);
+		
+	min-height: 100vh;
+		
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
 }
 
 :target {
 	scroll-margin-top: 5em;
 }
 
-.destaque {
-	font-size: x-large;
-}
-
-.red {
-	color: #CC0000;
+.light-red {
+	color: var(--light-red);
 }
 
 .margem {
@@ -92,7 +95,7 @@ html {
 	        transform: scale(1.1);
 }
 
-.zoom2 {
+.zoom-2nd {
 	-webkit-transition: -webkit-transform .2s;
 	transition: -webkit-transform .2s;
 	-o-transition: transform .2s;
@@ -100,32 +103,32 @@ html {
 	transition: transform .2s, -webkit-transform .2s;
 }
 
-.zoom2:hover {
+.zoom-2nd:hover {
 	-webkit-transform: scale(1.02);
 	    -ms-transform: scale(1.02);
 	        transform: scale(1.02);
 }
 
 .navbar {
-	background-color: #990000;
+	background-color: var(--main-red);
 	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
 	        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
 }
 
-.sublinhado {
+.underline {
 	position: relative;
-	color: rgb(255, 255, 255);
+	color: var(--white);
 	text-decoration: none;  
   }
 
-.sublinhado:before {
+.underline:before {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 1px;
 	bottom: 6px;
 	left: 0;
-	background-color: rgb(255, 255, 255);
+	background-color: var(--white);
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	-ms-transform: scaleX(0);
@@ -135,7 +138,7 @@ html {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.sublinhado:hover:before {
+.underline:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	-ms-transform: scaleX(1);
@@ -150,12 +153,12 @@ html {
 	cursor: pointer;
 }
 
-.sombra {
+.shadow {
 	-webkit-box-shadow: 0px 2px 14px 1px rgba(83, 83, 83, 0.99);
 	    box-shadow: 0px 2px 14px 1px rgba(83, 83, 83, 0.99);
 }
 
-.sombra-reversa {
+.reverse-shadow {
 	-webkit-box-shadow: inset 0px -5px 12px -5px rgba(0,0,0,0.64); 
 		box-shadow: inset 0px -5px 12px -5px rgba(0,0,0,0.64);
 }
@@ -167,14 +170,14 @@ html {
 }
 
 .btn-danger:hover {
-	background-color: #cc0000;
+	background-color: var(--light-red);
 	color: white;
-	border: 1px solid #cc0000;
+	border: 1px solid var(--light-red);
 }
 
 .btn-danger {
 	background-color: transparent;
-	color: #cc0000;
+	color: var(--light-red);
 }
 
 .btn-parallax {
@@ -190,22 +193,22 @@ html {
 	top: -15vh;
 	left: 5vh;
 	opacity: 0.4;
-	color:#FFF;
+	color:var(--white);
 }
 
 .fa-chevron-down {
-	background-color: #212121;
-	color: white;
+	background-color: var(--light-black);
+	color: var(--white);
 }
 
-.sub-contr:before {
+.underline-reverse:before {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 1px;
 	bottom: -5px;
 	left: 0;
-	background-color: #cc0000;
+	background-color: var(--light-red);
 	-webkit-transform: scaleX(1);
 	    -ms-transform: scaleX(1);
 	        transform: scaleX(1);
@@ -214,11 +217,11 @@ html {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.sub-contr, .sub-fixo {
+.underline-reverse, .underline-fixed {
 	position: relative;
 }
 
-.sub-contr:hover:before {
+.underline-reverse:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(0);
 	    -ms-transform: scaleX(0);
@@ -226,67 +229,63 @@ html {
 }
 
 
-.sub-fixo::after {
+.underline-fixed::after {
 	content: '';
 	position: absolute;
 	display: block;
 	width: 100%;
 	height: 1px;
-	background-color: #cc0000;
+	background-color: var(--light-red);
 	left: 0;
 	bottom: -5px;
 }
 
 .mail {
 	font-weight: bolder;
-	color: #212121;
-	-webkit-text-decoration: underline #212121;
-	        text-decoration: underline #212121;
+	color: var(--light-black);
 }
 
-
-
-
-
-.fab{
+.fab-2nd {
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
-  }
+}
   
-  .fab button{
+.fab-2nd button{
 	cursor: pointer;
 	width: 48px;
 	height: 48px;
 	border-radius: 30px;
-	background-color: #990000;
+	background-color: var(--main-red);
 	border: none;
-	box-shadow: 0 1px 5px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 	font-size: 24px;
-	color: white;
-  }
+	color: var(--white);
+}
 
   
-  .fab button.main{
+.fab-2nd button.main{
 	width: 60px;
 	height: 60px;
 	border-radius: 30px;
-	background-color: #990000;
-  }
+	background-color: var(--main-red);
+}
   
-  .fab button.main:before{
+.fab-2nd button.main:before{
 	content: '↓';
-  }
+}
   
-  .fab button.main:active,
-  .fab button.main:focus{
+.fab-2nd button.main:active,
+.fab-2nd button.main:focus{
 	outline: none;
-	background-color: #990000;
-	box-shadow: 0 3px 8px rgba(0,0,0,.5);
-   }
-  
-  .fab button.main:active,
-  .fab button.main:focus {
+	background-color: var(--main-red);
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.fab-2nd button.main:active,
+.fab-2nd button.main:focus {
 	bottom: 70px;
-  }
+}
   
