@@ -53,6 +53,14 @@ i {
 	}
 }
 
+main {
+	height: 100vh;
+}
+
+footer {
+    height: 50px;
+}
+
 .bg-red {
 	background-color: var(--main-red);
 }
