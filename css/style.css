@@ -287,12 +287,12 @@ footer {
 
 @media (max-width: 540px) {
 	.parallax {
-		background-image: url("./img/fundo-md.svg");
+		background-image: url("/img/fundo-md.svg");
 	}
 }
 
 @media (max-width: 300px) {
 	.parallax {
-		background-image: url("./img/fundo-mobile.svg");
+		background-image: url("/img/fundo-mobile.svg");
 	}
 }
