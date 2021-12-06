@@ -289,10 +289,18 @@ footer {
 	.parallax {
 		background-image: url("/img/fundo-md.svg");
 	}
+
+	main {
+		text-align: center;
+	}
 }
 
 @media (max-width: 300px) {
 	.parallax {
 		background-image: url("/img/fundo-mobile.svg");
+	}
+
+	main {
+		text-align: center;
 	}
 }
