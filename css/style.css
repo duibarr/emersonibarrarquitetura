@@ -41,18 +41,6 @@ i {
 	padding: 0px 10px 0px 10px;
 }
 
-@media (max-width: 540px) {
-	.parallax {
-		background-image: url("./img/fundo-md.svg");
-	}
-}
-
-@media (max-width: 300px) {
-	.parallax {
-		background-image: url("./img/fundo-mobile.svg");
-	}
-}
-
 main {
 	height: 100vh;
 }
@@ -296,4 +284,15 @@ footer {
 .fab-2nd button.main:focus {
 	bottom: 70px;
 }
-  
+
+@media (max-width: 540px) {
+	.parallax {
+		background-image: url("./img/fundo-md.svg");
+	}
+}
+
+@media (max-width: 300px) {
+	.parallax {
+		background-image: url("./img/fundo-mobile.svg");
+	}
+}
